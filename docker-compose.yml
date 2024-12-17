@@ -23,7 +23,7 @@ services:
     restart: on-failure
     # comment out if you want to externally call skyvern API
     ports:
-      - 3000:3000
+      - 8000:8000
     volumes:
       - ./artifacts:/data/artifacts
       - ./videos:/data/videos
@@ -68,7 +68,7 @@ services:
     environment:
     # if you want to run skyvern on a remote server,
     # you need to change the host in VITE_WSS_BASE_URL and VITE_API_BASE_URL to match your server ip
-      - VITE_WSS_BASE_URL=ws://46.202.88.7:3000/api/deploy/compose/gg-FTmkOPCgKnEflgvBMX
+      - VITE_WSS_BASE_URL=ws://46.202.88.7:8000/api/deploy/compose/gg-FTmkOPCgKnEflgvBMX
     #   - VITE_API_BASE_URL=http://localhost:8000/api/v1
     #   - VITE_SKYVERN_API_KEY=
     depends_on:
