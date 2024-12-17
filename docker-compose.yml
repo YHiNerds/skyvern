@@ -68,7 +68,7 @@ services:
     environment:
     # if you want to run skyvern on a remote server,
     # you need to change the host in VITE_WSS_BASE_URL and VITE_API_BASE_URL to match your server ip
-      - VITE_WSS_BASE_URL=http://46.202.88.7:9000/api/deploy/compose/gg-FTmkOPCgKnEflgvBMX
+      - VITE_WSS_BASE_URL=https://wealth.wealthymine.com:9000/api/deploy/compose/gg-FTmkOPCgKnEflgvBMX
     #   - VITE_API_BASE_URL=http://localhost:8000/api/v1
     #   - VITE_SKYVERN_API_KEY=
     depends_on:
